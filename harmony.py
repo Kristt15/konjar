@@ -19,7 +19,7 @@ fig, axes = plt.subplots(
 gelombang_superposisi = np.zeros_like(t)
 
 for idx, n in enumerate(harmonik_list):
-    amplitudo = (4 / np.pi) / n
+    amplitudo = (4 / np.pi) / n        
     gelombang_n = amplitudo * np.sin(2 * np.pi * n * f0 * t)
     gelombang_superposisi += gelombang_n
 
@@ -46,3 +46,4 @@ axes[-1].legend(loc="upper right", fontsize=8)
 plt.suptitle("Visualisasi Harmonisasi Gelombang Sinus", fontsize=13, fontweight="bold")
 plt.tight_layout()
 plt.show()
+
